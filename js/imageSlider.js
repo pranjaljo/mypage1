@@ -1,5 +1,5 @@
 jQuery(function() {
-    const imgAddress = ["375.jpg","img2.jpg","img3.jpg","img4.jpg"];
+    const imgAddress = ["img1.jpg","img2.jpg","img3.jpg","img4.jpg"];
     var index=0;
     var str1="";
     var str2="";
