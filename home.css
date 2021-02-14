@@ -1,0 +1,106 @@
+body{
+    margin:0;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none; /* IE and Edge */
+    background-color:black;
+}
+body::-webkit-scrollbar {
+    display: none;
+  }
+.body-container{
+    width: 100%;
+}
+.image-slider-container{
+    height:fit-content;
+    width:100%;
+    position:relative;
+}
+.image-slider-container .text-container{
+    position:absolute;
+    z-index: 2;
+    width: 80%;
+    margin: 0 10% 0 10%;
+    height:100%;
+}
+.image-slider-container .text-container .navbar{
+    display: flex;
+    justify-content: center;
+    color: white;
+    text-shadow: 0 0 3px black;
+    font-size: 18px;
+    font-family: 'Proza Libre', sans-serif;
+    height:5%;
+}
+.image-slider-container .text-container .navbar .navitem{
+    margin: 2px 5px;
+    cursor:pointer;
+}
+.image-slider-container .text-container .intro{
+    height: calc(95% - 45px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.image-slider-container .text-container .intro div{
+    text-align: center;
+    color:white;
+}
+.image-slider-container .text-container .intro .intro-start{
+    font-size:30px;
+    word-spacing: 5px;
+}
+.image-slider-container .text-container .intro .intro-name{
+    font-size:50px;
+    word-spacing: 5px;
+}
+.image-slider-container .text-container .intro .intro-end{
+    font-size:20px;
+}
+.image-slider-container .carousel-inner .carousel-item img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    filter: grayscale(0.7);
+    filter: brightness(50%);
+    animation: move 40s ease;
+    -ms-animation: move 40s ease;
+    -webkit-animation: move 40s ease;
+    -0-animation: move 40s ease;
+    -moz-animation: move 40s ease;
+
+}
+@-webkit-keyframes move {
+    0% {
+      -webkit-transform-origin: bottom left;
+      -moz-transform-origin: bottom left;
+      -ms-transform-origin: bottom left;
+      -o-transform-origin: bottom left;
+      transform-origin: bottom left;
+      transform: scale(1.0);
+      -ms-transform: scale(1.0);
+      /* IE 9 */
+      
+      -webkit-transform: scale(1.0);
+      /* Safari and Chrome */
+      
+      -o-transform: scale(1.0);
+      /* Opera */
+      
+      -moz-transform: scale(1.0);
+      /* Firefox */
+    }
+    100% {
+      transform: scale(1.2);
+      -ms-transform: scale(1.2);
+      /* IE 9 */
+      
+      -webkit-transform: scale(1.2);
+      /* Safari and Chrome */
+      
+      -o-transform: scale(1.2);
+      /* Opera */
+      
+      -moz-transform: scale(1.2);
+      /* Firefox */
+    }
+  }
