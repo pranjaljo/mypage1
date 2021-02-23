@@ -1,0 +1,150 @@
+.body-container .project-container {
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: center; */
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 1px 10px;
+    /* font-family: 'Proza Libre', sans-serif; */
+    font-family: "Segoe UI",Roboto,"Helvetica Neue";
+    /* line-height: 1.5;
+    font-family: ubuntu; */
+}
+
+.body-container .project-container .project {
+    min-width: 300px;
+    width: 100%;
+    max-width: 400px;
+    max-height: 250px;
+    height: 25vw;
+    min-height:237px;
+    border-radius: 5px;
+    margin: 5px;
+    overflow:hidden;
+    position:relative;
+    transition: 1s ease-in;
+}
+
+@media only screen and (max-width: 1330px){
+    .body-container .project-container{
+        grid-template-columns: auto auto;
+        grid-row-gap: 2%;
+    }
+    .body-container .project-container .project{
+        max-height: 350px;
+        height: 25vw;
+    }
+}
+@media only screen and (max-width: 1160px){
+    .body-container .project-container{
+        grid-gap: 1px 10px;
+    }
+}
+@media only screen and (max-width: 900px){
+    .body-container .project-container{
+        /* grid-template-columns: auto; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .body-container .project-container .project{
+        /* max-height: 350px; */
+        height: 50vw;
+        min-height: 250px;
+        min-width: 315px;
+    }
+}
+
+.body-container .project-container .project .project-outside {
+    position: relative;
+    height: 100%;
+}
+.body-container .project-container .project .project-outside lottie-player{
+    width:100%;
+    height:100%;
+}
+.body-container .project-container .project .project-inside{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    opacity: 0;
+    transition: 0.5s ease-in !important;
+}
+.body-container .project-container .project .project-inside.inside1{
+    color: whitesmoke;
+    text-shadow: 1px 1px black;
+}
+.body-container .project-container .project .project-inside:hover{
+    opacity: 0.95;
+}
+.body-container .project-container .project .project-inside .title{
+    width: fit-content;
+    margin: 0 auto;
+    padding-top: 25px;
+    font-size: 25px;
+    font-weight: 800;
+    padding-bottom: 11px;
+    text-align: center;
+}
+.body-container .project-container .project .project-inside .content{
+    padding: 0 12px 0 12px;
+    font-size: 17px;
+}
+.body-container .project-container .project .project-inside .button{
+    width: -webkit-fill-available;
+    position: absolute;
+    text-align: center;
+    bottom: 20px;
+}
+.body-container .project-container .project .project-inside .button span{
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: 700;
+}
+.body-container .project-container .project .project-inside.inside1 .button span{
+    /* Moontaxi,OMR,GoogleScholar */
+    border: 1px solid black;
+    color: black;
+    text-shadow: none;
+    background: whitesmoke ;
+}
+.body-container .project-container .project .project-inside.inside2 .button span{
+    /* Stocks,Spellchecker,Ecomm */
+    border: 1px solid black;
+    color: whitesmoke;
+    text-shadow: none;
+    background: black ;
+}
+.body-container .project-container .project .project-inside#moontaxi{
+    background-color: #444444;
+}
+.body-container .project-container .project .project-inside#stock{
+    background-color:rgb(187,247,244);
+}
+.body-container .project-container .project .project-inside#OMR{
+    background-color:#6B46E5;
+}
+.body-container .project-container .project .project-inside#GSNA{
+    background-color:#E42112;
+}
+.body-container .project-container .project .project-inside#spell{
+    background-color:#FF8C00;
+}
+.body-container .project-container .project .project-inside#shopping{
+    background-color:#26bc6a
+}
+@import url(https://fonts.googleapis.com/css?family=Lato);
+ *, *::before, *::after {
+	 margin: 0;
+	 padding: 0;
+	 -webkit-box-sizing: border-box;
+	 -moz-box-sizing: border-box;
+	 box-sizing: border-box;
+}
+
+ /* .timeline {
+	 color: #fff;
+} */

@@ -1,0 +1,74 @@
+footer{
+    width:100%;
+    height:fit-content;
+    margin-top:100px;
+    background-color:#56045c;
+    border-top-left-radius: 300px;
+    border-top-right-radius: 300px;
+}
+footer .sub-Heading{
+    font-family: 'Akaya Telivigala', cursive;
+    color: white;
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 35px;
+}
+footer .sub-Heading span:nth-child(2){
+    font-size:25px;
+}
+footer .heading{
+    color: white;
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Akaya Telivigala', cursive;
+}
+footer .heading span{
+    /* width:fit-content;
+    padding: 20px;
+    border: 1px solid white; */
+}
+footer .lottie-container{
+    height:100px;
+    width:100px;
+}
+footer .icon-container{
+    text-align:center;
+    display:flex;
+    justify-content: center;
+    margin-top:30px;
+}
+footer .icon-container .container-4{
+    display:flex;
+    justify-content: center;
+}
+footer .icon-container .icon{
+    margin: 10px;
+}
+footer .icon-container .icon img{
+    height:50px;
+    cursor:pointer;
+    transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.transformClass{
+    transform: scale(1.5);
+}
+@media only screen and (max-width: 600px){
+    footer .icon-container{
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width: 500px){
+    footer .icon-container .icon img{
+        height:40px;
+    }
+}
+@media only screen and (max-width: 350px){
+    footer .icon-container .icon img{
+        height:30px;
+    }
+}

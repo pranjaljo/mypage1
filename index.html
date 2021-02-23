@@ -1,42 +1,402 @@
 <html>
-    <head>
-        <!-- google font -->
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Proza+Libre&display=swap" rel="stylesheet">
-        <!-- viewport -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta charset="utf-8">
-        <!-- bootstrap and jQuery -->
-        <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
-        <script src="js/jquery-3.5.1.min.js"></script>
-        <script src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
-        <!-- custom css and js -->
-        <link rel="stylesheet" href="home.css">
-        <script src="js/imageSlider.js"></script>
-    </head>
-    <body>
-        <div class="image-slider-container">
-            <div class="text-container">
-                <div class="navbar">
-                    <div class="navitem">Home</div>
-                    <div class="navitem">Projects</div>
-                    <div class="navitem">Experience</div>
-                    <div class="navitem">Interests</div>
-                </div>
-                <div class="intro">
-                    <div class="intro-start">Hello, I'm</div>
-                    <div class="intro-name">Pranjal Joshi</div>
-                    <div class="intro-end">AND THIS IS MY REZUME</div>
-                </div>
-            </div>
 
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators"></ol>
-                <div class="carousel-inner"></div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span></a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span></a>
+<head>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Proza+Libre&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Euphoria+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap" rel="stylesheet"> -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap" rel="stylesheet">
+
+    <!-- viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <!-- bootstrap and jQuery -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <!-- <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css"> -->
+    <!-- <script src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>  -->
+    <script src="js/lottie.js"></script>
+    <!-- custom css and js -->
+    <link rel="stylesheet" href="backgroundBanner.css">
+    <link rel="stylesheet" href="aboutMe.css">
+    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="timeline.css">
+    <link rel="stylesheet" href="footer.css">
+    <script src="js/imageSlider.js"></script>
+    <script src="js/timeline.js"></script>
+</head>
+
+<body>
+    <div class="background-banner">
+        <div class="text-container">
+            <div class="navbar">
+                <div class="navitem nav-aboutMe">AboutMe</div>
+                <div class="navitem nav-projects">Projects</div>
+                <div class="navitem nav-exp">Experience</div>
+                <div class="navitem nav-contact">Contact</div>
+            </div>
+            <div class="intro">
+                <div class="intro-start">Hello, I'm</div>
+                <div class="intro-name">Pranjal Joshi</div>
+                <div class="intro-end">AND THIS IS MY REZUME</div>
             </div>
         </div>
-    </body>
+        <div class="image-container">
+            <img src="static/img2.jpg">
+        </div>
+    </div>
+    <div class="body-container">
+        <div class="bio-wrapper">
+            <div class="text-container">
+                <div class="title">
+                    <div class="title-text">About Me</div>
+                </div>
+                <div class="content">
+                    <div class="content-top">
+                        <span>
+                            I'm a final year undergrad student who loves to design and code.I am an outgoing person and
+                            have a keen ability to successfully work in teams. Since my childhood I have always been
+                            fasinated by technology.
+                            I am inspired by how technology changes and how it efects the world. That has been my main
+                            motivation for learning how to code.
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="image-slider-container">
+                <div class="before-image">
+                    <img src="static/374.jpg">
+                </div>
+                <div class="after-image">
+                    <img src="static/374_2.jpg">
+                </div>
+                <input type="range" class="slider" min="0" max="100" value="60">
+                <div class='slider-button'></div>
+            </div>
+            <div class="text-container">
+                <div class="content">
+                    <div class="content-mid">
+                        <span>
+                            In my free time I read comics, watch movies, play games or experiment with code.
+                            I enjoy solving puzzels and competetive coading.
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="project-wrapper">
+            <div class="text-container">
+                <div class="title">
+                    <div class="title-text">My Projects</div>
+                </div>
+                <div class="content">
+                    <div class="content-top">
+                        <span>
+                            Here are some of my works. If you are interested in viewing more of my projects drop me
+                            text.
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-container">
+                <div class="project">
+                    <div class="project-outside">
+                        <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_2t1zAS.json"
+                            background="#635f5f" speed="1" loop autoplay>
+                        </lottie-player>
+                    </div>
+                    <div class="project-inside inside1" id="moontaxi">
+                        <div class="title">Carpooling System</div>
+                        <div class="content">
+                            <span>Designed and deployed a real time carpooling webapplication</span>
+                        </div>
+                        <div class="button"><span>Read More</span></div>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="project-outside">
+                        <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_yRrgc4.json"
+                            background="rgb(237,247,244)" speed="1" loop autoplay>
+                        </lottie-player>
+                    </div>
+                    <div class="project-inside inside2" id="stock">
+                        <div class="title">Stock Market Prediction</div>
+                        <div class="content">
+                            <span>Developed and Trained a model to provide an accurate prediction of the stock</span>
+                        </div>
+                        <div class="button"><span>Read More</span></div>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="project-outside">
+                        <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_iV1uOa.json"
+                            background="#6B46E5" speed="1" loop autoplay>
+                        </lottie-player>
+                    </div>
+                    <div class="project-inside inside1" id="OMR">
+                        <div class="title">OMR Reader</div>
+                        <div class="content">
+                            <span>Developed a cost effective OMR reader which is platform independent and can be used
+                                for
+                                exam
+                                evaluation, automated attendance and surveys.
+                            </span>
+                        </div>
+                        <div class="button"><span class="wtf">Read More</span></div>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="project-outside">
+                        <!-- <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_xwgclkyh.json" -->
+                        <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_ShrsmB.json"
+                            background="#FF8C00" speed="0.6" loop autoplay>
+                        </lottie-player>
+                    </div>
+                    <div class="project-inside inside2" id="spell">
+                        <div class="title">SpellChecker</div>
+                        <div class="content">
+                            <span>Created a software for detecting and replacing incorrect spellings</span>
+                        </div>
+                        <div class="button"><span>Read More</span></div>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="project-outside">
+                        <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_t0lgow.json"
+                            background="#E42112" speed="1" loop autoplay>
+                        </lottie-player>
+                    </div>
+                    <div class="project-inside inside1" id="GSNA">
+                        <div class="title">Scholar Network Analysis</div>
+                        <div class="content">
+                            <span>Obtained relationship between various co-authors to better understand the nature of
+                                citations.</span>
+                        </div>
+                        <div class="button"><span>Read More</span></div>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="project-outside">
+                        <!-- <lottie-player class="shopping-lottie"src="https://assets1.lottiefiles.com/packages/lf20_hsojyr3p.json" -->
+                        <lottie-player src=" https://assets8.lottiefiles.com/packages/lf20_57TxAX.json"
+                            https://assets8.lottiefiles.com/packages/lf20_57TxAX.json background="#26BC6A" speed="1"
+                            loop autoplay>
+                        </lottie-player>
+                    </div>
+                    <div class="project-inside inside2" id="shopping">
+                        <div class="title">E-commerce</div>
+                        <div class="content">
+                            <span>Assited in the development of an online shopping portal</span>
+                        </div>
+                        <div class="button"><span>Read More</span></div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="text-container">
+                <div class="content">
+                    <div class="content-top">
+                        <span></span>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+        <div class="edu-work-wrapper">
+            <div class="text-container">
+                <div class="title">
+                    <div class="title-text">My Work Experience</div>
+                </div>
+                <div class="content">
+                    <div class="content-top">
+                        <span>
+                            Being an undergrad student I have a limited industry exposure and education. I did my
+                            schooling from Bhopal with maths and science as major subjects. After that I joined Vellore
+                            Institute of Technology to pursue my Bachelors in Computer Science. I have listed my
+                            internships and college activities below in a chronological order.
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-container">
+                <div class="timeline">
+                    <!-- <div class="item-container">
+                        <div class="left">
+                            <div class="heading">1998</div>
+                            <div class="sub-heading">September</div>
+                        </div>
+                        <div class="right">
+                            <div class="heading"></div>
+                            <div class="sub-heading"></div>
+                            <div class="content">The beginning of my journey. I was born in Jabalpur M.P.</div>
+                            <div class="pointer"></div>
+                        </div>
+                        <div class="center"></div>
+                    </div> -->
+                    <div class="item-container">
+                        <div class="left">
+                            <div class="heading">2017</div>
+                            <div class="sub-heading">July</div>
+                        </div>
+                        <div class="left-hidden">
+                            <div class="heading">July 2017</div>
+                        </div>
+                        <div class="right">
+                            <div class="sub-heading">University Student </div>
+                            <div class="heading">Vellore Institute of Technology</div>
+                            <div class="content">Joined VIT, Vellore to pursue my Bachelor's degree in Computer Science.
+                            </div>
+                            <div class="pointer"></div>
+                        </div>
+                        <div class="center"></div>
+                    </div>
+                    <div class="item-container">
+                        <div class="left">
+                            <div class="heading">2018</div>
+                            <div class="sub-heading">February</div>
+                        </div>
+                        <div class="left-hidden">
+                            <div class="heading">February 2018</div>
+                        </div>
+                        <div class="right">
+                            <div class="sub-heading">Club Member</div>
+                            <div class="heading">MunSoc</div>
+                            <div class="content">Joined the MunSoc (Model United Nation Society) as a content writer.
+                            </div>
+                            <div class="pointer"></div>
+                        </div>
+                        <div class="center"></div>
+                    </div>
+                    <div class="item-container">
+                        <div class="left">
+                            <div class="heading">2020</div>
+                            <div class="sub-heading">April</div>
+                        </div>
+                        <div class="left-hidden">
+                            <div class="heading">April 2020</div>
+                        </div>
+                        <div class="right">
+                            <div class="sub-heading">FrontEnd Developer Intern</div>
+                            <div class="heading">DronaHQ</div>
+                            <div class="duration">April 2020 - May 2020</div>
+                            <div class="content">Interned at DronaHQ. DronaHQ is product of Deltecs Infotech that
+                                provides a platform for No code App Development. Worked on Creating new controls and
+                                implemented the popup functionality for their webapplication</div>
+                            <div class="footer"><a href="www.dronahq.com">More about DronaHQ</a></div>
+                            <div class="pointer"></div>
+                        </div>
+                        <div class="center"></div>
+                    </div>
+                    <div class="item-container">
+                        <div class="left">
+                            <div class="heading">2020</div>
+                            <div class="sub-heading">June</div>
+                        </div>
+                        <div class="left-hidden">
+                            <div class="heading">June 2020</div>
+                        </div>
+                        <div class="right">
+                            <div class="sub-heading">Angular Developer Intern</div>
+                            <div class="heading">State Bank of India</div>
+                            <div class="duration">June 2020 - July 2020</div>
+                            <div class="content">Interned at State Bank of India. Assisted in the development of
+                                Productivy metric Application, an application that keeps track of all the projects and
+                                employees associated with the bank.</div>
+                            <div class="footer"><a href="www.sbi.co.in">More about SBI</a></div>
+                            <div class="pointer"></div>
+                        </div>
+                        <div class="center"></div>
+                    </div>
+                    <div class="item-container">
+                        <div class="left">
+                            <div class="heading">2020</div>
+                            <div class="sub-heading">December</div>
+                        </div>
+                        <div class="left-hidden">
+                            <div class="heading">December 2020</div>
+                        </div>
+                        <div class="right">
+                            <div class="sub-heading">FrontEnd Developer Intern</div>
+                            <div class="heading">DronaHQ</div>
+                            <div class="duration">Dec 2020 - Current</div>
+                            <div class="content">Currenty undertaking a Six-Month Internship at DronaHQ. Worked on the
+                                frontEnd for the product, created various controls and templates.</div>
+                            <div class="footer"><a href="www.dronahq.com">More About DronaHQ</a></div>
+                            <div class="pointer"></div>
+                        </div>
+                        <div class="center"></div>
+                    </div>
+                    <div class="item-container">
+                        <div class="left">
+                            <div class="heading">2021</div>
+                            <div class="sub-heading">February</div>
+                        </div>
+                        <div class="left-hidden">
+                            <div class="heading">February 2021</div>
+                        </div>
+                        <div class="right">
+                            <div class="heading"></div>
+                            <div class="sub-heading"></div>
+                            <div class="content">Decided to make this website</div>
+                            <div class="pointer"></div>
+                        </div>
+                        <div class="center"></div>
+                    </div>
+                    <div class="item-container">
+                        <div class="left">
+                            <div class="heading">2021</div>
+                            <div class="sub-heading">July</div>
+                        </div>
+                        <div class="left-hidden">
+                            <div class="heading">July 2021</div>
+                        </div>
+                        <div class="right">
+                            <div class="sub-heading">Software Developer</div>
+                            <div class="heading">IBM</div>
+                            <div class="content">Expected Joining date at my new company IBM</div>
+                            <div class="footer"><a href="www.ibm.com/in-en">More about IBM</a></div>
+                            <div class="pointer"></div>
+                        </div>
+                        <div class="center"></div>
+                    </div>
+                    <div class="timeline-line"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="icon-container">
+            <div class="container-4">
+                <div class=icon>
+                    <img src="icons/iconfinder_social-media_linkedin_1727490.png">
+                </div>
+                <div class=icon>
+                    <img src="icons/iconfinder_social-media_gmail_1873613.png">
+                </div>
+                <div class=icon>
+                    <img src="icons/iconfinder_social-media_GitHub_1872635.png">
+                </div>
+                <div class=icon>
+                    <img src="icons/iconfinder_160_Hackerrank_4519110.png">
+                </div>
+            </div>
+            <div class="container-4">
+                <div class=icon>
+                    <img src="icons/iconfinder_social_30_492979.png">
+                </div>
+                <div class=icon>
+                    <img src="icons/iconfinder_social-media_facebook_1543325.png">
+                </div>
+                <div class=icon>
+                    <img src="icons/iconfinder_social-media_instagram-black_1885169.png">
+                </div>
+                <div class=icon>
+                    <img src="icons/iconfinder_social-media_discord-alt_2417764.png">
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
 
 </html>
